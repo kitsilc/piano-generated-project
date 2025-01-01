@@ -1,0 +1,54 @@
+.keyboard {
+      display: flex;
+      margin: 20px auto;
+      border: 1px solid #000;
+      overflow-x: auto;
+      width: 95%;
+      max-width: 1200px;
+    }
+
+    .white-key {
+      width: 23px;
+      height: 150px;
+      background-color: white;
+      border: 1px solid #000;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    .black-key {
+      width: 15px;
+      height: 100px;
+      background-color: black;
+      border: 1px solid #000;
+      cursor: pointer;
+      margin-left: -8px;
+      margin-right: -8px;
+      z-index: 1;
+      box-sizing: border-box;
+    }
+
+    .computer-keyboard {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      gap: 5px;
+      margin: 20px auto;
+      width: fit-content;
+    }
+
+    .key {
+      background-color: #eee;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .key.active {
+      background-color: lightblue;
+    }
+
+    .white-key.active, .black-key.active {
+      background-color: lightgreen;
+    }
